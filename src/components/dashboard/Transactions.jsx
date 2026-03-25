@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useStore } from '../../lib/store'
-import { shortAddress } from '../../lib/stellar'
+import { shortAddress, getOperationLabel } from '../../lib/stellar'
 import CopyableValue from './CopyableValue'
 import { format } from 'date-fns'
 
@@ -135,7 +135,7 @@ export default function Transactions() {
                     marginRight: '8px',
                     fontFamily: 'var(--font-mono)',
                   }}>
-                    {op.type.replace(/_/g, ' ')}
+                    {getOperationLabel(op.type)}
                   </span>
                 </div>
                 {op.from && (
