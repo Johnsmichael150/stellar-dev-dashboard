@@ -28,6 +28,7 @@ import DEXExplorer from "./components/dashboard/DEXExplorer";
 import ExplorerEmbed from "./components/dashboard/ExplorerEmbed";
 import RealTimeLedger from "./components/dashboard/RealTimeLedger";
 import { AssetDiscovery } from "./components/assets";
+import { MultisigManager } from "./components/multisig";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { useStore } from "./lib/store";
 import { useTranslation } from "./hooks/useTranslation";
@@ -78,6 +79,7 @@ const TABS = {
   realtime: RealTimeLedger,
   charts: ChartsTab,
   assets: AssetDiscovery,
+  multisig: MultisigManager,
 };
 
 function DashboardLayout() {

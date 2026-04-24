@@ -15,6 +15,7 @@ const NAV_ITEMS = [
   { id: 'faucet', label: 'Faucet', icon: '⬡' },
   { id: 'wallet', label: 'Wallet', icon: '⊡' },
   { id: 'signer', label: 'Signer', icon: '✎' },
+  { id: 'multisig', label: 'Multisig', icon: '⊕' },
   { id: 'portfolio', label: 'Portfolio', icon: '◐' },
   { id: 'charts', label: 'Charts', icon: '▤' },
 ]
